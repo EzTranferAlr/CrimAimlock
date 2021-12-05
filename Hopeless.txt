@@ -1,0 +1,116 @@
+
+local Material = loadstring(game:HttpGet("https://raw.githubusercontent.com/Kinlei/MaterialLua/master/Module.lua"))()
+
+local UI = Material.Load({
+     Title = "HopelessV1", 
+     Style = 3,
+     SizeX = 500, -- Size in X
+     SizeY = 300,  -- Size in Y
+     Theme = "Aqua", -- There are 5 Styles, Aqua, Mocha, Jester, Dark, Light
+     ColorOverrides = {
+        MainFrame = Color3.fromRGB(35, 35, 35)
+    }
+})
+
+-- pages.
+
+local Page = UI.New({
+    Title = "Aimlock" 
+})
+
+local Page2 = UI.New({
+    Title = "Misc" 
+})
+
+local Page3 = UI.New({
+    Title = "Esp" 
+})
+
+-- Page 1
+Page.Button({
+    Text = "Aimlock (C TO LOCK)",
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/coolmanstrongsuperman/lol/main/TheWare"))()
+    end
+})
+
+Page.Button({
+    Text = "Infinite Stamina (RISKY)",
+    Callback = function()
+        loadstring(game:HttpGet("https://pastebin.com/raw/5xgu2P5B"))()
+    end
+})
+
+Page.Button({
+    Text = "DONT USE (PATCHED)",
+    Callback = function()
+        loadstring(game:HttpGet(''))()
+
+    end
+})
+-- Page 2 
+Page2.Button({
+    Text = "Ping Tracker",
+    Callback = function()
+        loadstring(game:HttpGet("https://pastebin.com/raw/RXDQkNPW"))()
+    end
+})
+
+Page2.Button({
+    Text = "Chat Logs",
+    Callback = function()
+        loadstring(game:HttpGet("https://pastebin.com/raw/stggPUBM"))()
+    end
+})
+
+Page2.Button({
+    Text = "FullBright (REALLY GOOD)",
+    Callback = function()
+        loadstring(game:HttpGet("https://pastebin.com/raw/vMEADuA2"))()
+    end
+})
+
+
+
+Page2.Button({
+    Text = "FreeCam (Shift+P)",
+    Callback = function()
+        loadstring(game:HttpGet("https://pastebin.com/raw/yJ51HKy9"))()
+    end
+})
+
+--Page 3
+Page3.Button({
+    Text = "PATCHED",
+    Callback = function()
+        loadstring(game:HttpGet("https://pastebin.com/raw/wtpbN7dz"))()
+    end
+})
+
+Page3.Button({
+    Text = "PATCHED",
+    Callback = function()
+        loadstring(game:HttpGet("https://pastebin.com/raw/nyMKYd8H"))()
+    end
+})
+
+Page3.Button({
+    Text = "PATCHED",
+    Callback = function()
+        loadstring(game:HttpGet("https://pastebin.com/raw/fwVkePNY"))()
+    end
+})
+
+Page3.Button({
+    Text = "Criminality Esp",
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/wally-rblx/roblox-scripts/main/criminality_esp.lua"))()
+    end
+})
+
+Page3.Button({
+    Text = "120 FOV",
+    Callback = function()
+        workspace.CurrentCamera.FieldOfView = 120
+    end
+})
